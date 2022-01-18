@@ -23,8 +23,7 @@ impl Default for Duck {
 
 #[near_bindgen]
 impl Duck {
-    #[init(ignore_state)]
-    pub fn move_nft() {
+    pub fn fake_move_nft() {
         env::log(r#"
             EVENT_JSON:
               {
@@ -105,9 +104,7 @@ impl Duck {
         "#.as_bytes());
     }
 
-
-    #[init(ignore_state)]
-    pub fn move_ft() {
+    pub fn fake_move_ft() {
         env::log(r#"
             EVENT_JSON:
               {
